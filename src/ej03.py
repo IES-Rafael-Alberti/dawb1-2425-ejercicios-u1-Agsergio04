@@ -6,5 +6,5 @@ divison_primera = ancho / 2
 divison_entera = ancho // 2
 division_segunda = alto / 3
 once = 1 + 2 * 5
-print(divison_primera,division_segunda,divison_entera,once)
+print(type(divison_primera),type(division_segunda),type(divison_entera),type(once))
 print("Las respuestas que pienso son: 1º 8.5,2º 8,3º 4,4º 11")
