@@ -1,8 +1,7 @@
 frase = input("Introduce una frase cualquiera: ")
-vocal = input("Introduce una vocal")
+vocal = input("Introduce una vocal: ").lower()
 
-vocal.lower()
 
-frase.replace(vocal,"a" and "e" and "i" and "o" and "u")
+frase = frase.replace(vocal, vocal.upper())
 
 print(frase)
