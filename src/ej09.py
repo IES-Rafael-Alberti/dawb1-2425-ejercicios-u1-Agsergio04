@@ -1,5 +1,5 @@
-for i in range(3):
-    i = int(input("Introduzca un numero: "))
-    i = i + i - 1
-    
-print("La suma de los numeros es : ",i)
+print("La suma de los numeros es : ",
+float(input("Introduce un numero: ")) + 
+float(input("Introduce otro numero: ")) + 
+float(input("Introduce un  ultimo numero: "))
+)
