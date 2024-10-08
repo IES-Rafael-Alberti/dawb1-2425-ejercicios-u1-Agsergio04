@@ -17,5 +17,6 @@ def main():
     valor = int(input("Introduce un valor: "))
     numero_binario = convertir_a_binario(valor)
     print(numero_binario)
+    
 if __name__ == "__main__":
     main()
