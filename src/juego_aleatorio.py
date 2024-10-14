@@ -16,7 +16,8 @@ def main():
     print(numero_aleatorio)
     while jugador != numero_aleatorio and contador < 6:
         print(f"Llevas {contador} intentos.")
-        jugador = int(input("Introduce el numero: "))
+        
+        jugador = int(input("Introduce el numero: \n"))
         
         if jugador < 1 or jugador > 100:
             print("Numero no valido,por favor mete un numero entre el 1 y el 100")
