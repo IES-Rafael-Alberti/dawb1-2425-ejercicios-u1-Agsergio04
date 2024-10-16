@@ -1,11 +1,16 @@
 def fibonacci(numero):
-    aux = 1
-    linea_serie = "0"
+    serie_inicial = 0
+    serie_secundaria = 1
+    linea = "0"
+
+    for _ in range(numero):
+        valor = serie_inicial + serie_secundaria
+        serie_inicial = serie_secundaria
+        serie_secundaria = valor
+
+        linea +=" " + str(serie_inicial)
     
-    for b in range(numero):
-        linea_serie += " " + str(c)
-        
-    return linea_serie
+    return linea
 
 
 def main():
