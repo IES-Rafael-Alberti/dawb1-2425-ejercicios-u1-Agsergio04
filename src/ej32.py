@@ -1,22 +1,24 @@
 def fibonacci(numero):
-    serie_inicial = 0
-    serie_secundaria = 1
-    linea = "0"
+    num = 1
+    num_minus = 0
 
-    for _ in range(numero):
-        valor = serie_inicial + serie_secundaria
-        serie_inicial = serie_secundaria
-        serie_secundaria = valor
-
-        linea +=" " + str(serie_inicial)
+    serie = str(num_minus) + " " + str(num)
     
-    return linea
-
+    fibonacci = num + num_minus
+    
+    while fibonacci <= numero:
+        
+        num = num_minus 
+        num_minus = fibonacci
+        
+        fibonacci = num + num_minus
+        serie +=" " + str(fibonacci)
+        
+    return serie
 
 def main():
     numero = int(input("Introduce hasta que numero quieres ver de la serie de Fibonacci : "))
     print(fibonacci(numero))
-    
     
 if  __name__ == "__main__":
     main()
