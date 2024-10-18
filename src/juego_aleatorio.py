@@ -14,7 +14,7 @@ def main():
     
     print("Vamos a jugar a adivinar el numero :p \nTienes que escribir un numero del 1 al 100 en 5 intentos o menos")
     print(numero_aleatorio)
-    while jugador != numero_aleatorio and contador < 6:
+    while jugador != numero_aleatorio and contador < 5:
         print(f"Llevas {contador} intentos.")
         
         jugador = int(input("Introduce el numero: \n"))
@@ -24,10 +24,10 @@ def main():
         contador += 1
     
     if numero_aleatorio == jugador:
-        print("Grande lokete has ganado!!!")
+        print(f"Grande lokete has ganado en {contador} intentos !!!")
     
     else:
-        print("Mondongo!!!")    
+        print("Has perdido !!!")    
     
 if __name__ == "__main__":
     main()
